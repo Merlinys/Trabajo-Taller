@@ -15,16 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from data.views import interPag,logIn,addProd
+from data.views import interPag,logIn,Productos
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', interPag.home),
     path('SesionAdmin',interPag.seAdmin),
+    path('addProducto',Productos.agregarProducto ,name='post-agregar'),
     path('optiadm',logIn.logIn),
     path('addProducto',interPag.addProducto),
     path('verOfertas',interPag.verOferta),
-    
+   
 ]
 

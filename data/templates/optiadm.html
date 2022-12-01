@@ -4,7 +4,7 @@
     {% load static %}
     <meta charset="UTF-8">
     <link rel="stylesheet"  href="{% static 'css/opt-adm1.css' %}">
-    <title>Opciones Admin</title>
+    <title>Opciones administrador</title>
 </head>
 <body>
     <div class = "recuadro" id="user">
@@ -16,16 +16,16 @@
     <div class="recuadro" id="opciones">
         <p id="labelOpciones">Opciones de administrador</p>
         <center>
-            <form action="/addProducto" id="Addproducto">{% csrf_token %}
+            <form>
                 <h3>Añadir Oferta</h3>
                 <button class = "btnOpcion btn-primary" type="submit" id="btAñadiroferta"></button>
             </form>
         </center> 
         
         <center>
-            <form >
+            <form action="/addProducto" id="Addproducto">{% csrf_token %}>
                 <h3>Agregar Producto</h3>
-                <button class = "btnOpcion btn-primary" type="subm"  id="btInsertarpro"></button>
+                <button class = "btnOpcion btn-primary" type="submit"  id="btInsertarpro"></button>
             </form>
         </center>
         
