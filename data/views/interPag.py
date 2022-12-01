@@ -10,8 +10,8 @@ def seAdmin(request):
     return render(request, "SesionAdmin.html", {},status=200)
 
 #pantalla añadir ofertas
-def addOferta(request):
-    return render(request, "addOferta.html", {},status=200)
+def addProducto(request):
+    return render(request, "addProducto.html", {},status=200)
 
 def verOferta(request):
     return render(request,'verOfertas.html',{},status=200)

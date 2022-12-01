@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from data.views import interPag,logIn
+from data.views import interPag,logIn,addProd
 
 
 urlpatterns = [
@@ -23,7 +23,8 @@ urlpatterns = [
     path('', interPag.home),
     path('SesionAdmin',interPag.seAdmin),
     path('optiadm',logIn.logIn),
-    path('addOferta',interPag.addOferta),
-    path('verOfertas',interPag.verOferta)
+    path('addProducto',interPag.addProducto),
+    path('verOfertas',interPag.verOferta),
+    
 ]
 
