@@ -1,0 +1,74 @@
+body{
+    background-image: url(../imagenes/background.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    width: 800px;
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.836);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.caja h4{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.datos{
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.caja .register{
+    margin-bottom: 12px;
+    margin-left: 40px;
+    width: 5cm;
+    height: 1.2cm;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    border: none;
+    border-radius: 10px; 
+    background-color: gray;
+    text-align:center;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.caja .cancel{
+    margin-bottom: 12px;
+    margin-left: 330px;
+    width: 5cm;
+    height: 1.2cm;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    border: none;
+    border-radius: 10px; 
+    background-color: gray;
+    text-align:center;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.cancel:hover{
+    background: red;
+}
+.register:hover{
+	background: green; 
+}

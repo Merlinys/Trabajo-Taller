@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/Ofertashistorial.css' %}">
+    <title>Ofertas Disponibles</title>
+</head>
+<body>
+    <div class="caja" id="titulo">
+        <center><h1>Ofertas Disponibles</h1></center>
+    </div>
+
+    <div class="caja" id="desplegable">
+        <form action="#">
+            <label for="offers">Ver Ofertas</label>
+            <select name="Offers_disp" id="offers">
+              <option value="Oferta">Oferta</option>
+              <option value="Oferta">Oferta</option>
+              <option value="Oferta">Oferta</option> <!--Se supone que las "options" se deben ir 
+                                                    actualizando automaticamente con las ofertas ingresadas-->
+              <option value="Oferta">Oferta</option>
+              <option value="Oferta">Oferta</option>
+              <option value="Oferta">Oferta</option>
+              <option value="Oferta">Oferta</option>
+              <option value="Oferta">Oferta</option>
+            </select>
+            <input class="btAceptar" type="submit" value="Buscar" />
+      </form>
+    </div>  
+    <div class="caja" id="Info">
+        <p>Nombre del plato:<br> 
+           ID: <br>
+           Precio: <br>
+           Fecha de Inicio: <br>
+           Fecha de finalizacion:
+        </p>
+    </div>
+    
+</body>
+</html>

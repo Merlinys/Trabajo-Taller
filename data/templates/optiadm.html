@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="{% static 'css/opt-adm1.css' %}">
+    <title>Opciones Admin</title>
+</head>
+<body>
+    <div class = "recuadro" id="user">
+        <p>Usuario: </br>Fecha:</br>RUT: </p>
+        <form action="/SesionAdmin" id ="Sesion"> {% csrf_token %} 
+            <input class = "boton" type="submit" value="Cerrar Sesion" id="btCerrar" >
+        </form>
+    </div>
+    <div class="recuadro" id="opciones">
+        <p id="labelOpciones">Opciones de administrador</p>
+        <center>
+            <form action="/addOferta" id="Addoferta">
+                <h3>Añadir Oferta</h3>
+                <button class = "btnOpcion btn-primary" type="submit" id="btAñadiroferta"></button>
+            </form>
+        </center> 
+        
+        <center>
+            <form >
+                <h3>Agregar Producto</h3>
+                <button class = "btnOpcion btn-primary" type="subm"  id="btInsertarpro"></button>
+            </form>
+        </center>
+        
+        <center>
+            <form action="/verOfertas" id="verOfertas" >{% csrf_token %}
+                <h3>Visualizar Ofertas</h3>
+                <button class="btnOpcion btn-primary" type="button" data-toggle="modal" id="btVerOfertas"> </button>
+            </form>    
+        </center>
+    </div>
+    
+</body>
+</html>

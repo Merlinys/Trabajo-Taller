@@ -1,0 +1,104 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    color: #ffffff;
+    background: url(../imagenes/background.jpg);
+    background-size: cover;
+}
+.recuadro{
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.836);
+    border-radius: 20px;
+}
+#user {/*primera caja*/
+    display:grid;
+    grid-template-columns: [primera]50% [segunda]40% [tercera]10%[end];/*mueve el boton de cerrar sesion*/
+    grid-template-rows: repeat(10[opcion]) [end];
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding: 20px;
+}
+#informacion_us{
+    margin-top: 170%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    font-size: 210%;
+}
+.boton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    color:white;
+    background: gray;
+    border: none;
+    border-radius: 10px; 
+    text-align:end;
+}
+#btCerrar {
+    font-size: 160%;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 1;
+    height: 79%;
+    margin-left: -85%;
+    background: gray;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+#opciones {
+    display: grid;
+    grid-template-columns: [primera]30% repeat(9,16% [opcion]) [end];
+    grid-template-rows: [primera] 40% [segundo] 10% [end];
+    width: 80%;
+    height: 190%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 20px;
+}
+#labelOpciones{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin-top: 9%;
+    margin-left: 10%;
+    font-size: 250%;
+}
+.btnOpcion{
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#ffffff;
+    border: none;
+    border-radius: 10px; 
+    background-color: #99a8b3;
+    background: grey;
+    text-align:end;
+    height: 4cm;
+    width: 4cm;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+button:hover{
+	background: green; /*cambia de color el hover*/
+}
+
+#btCerrar:hover{
+	background: green; /*cambia de color el hover*/
+}
+
+#btAñadiroferta {
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(../imagenes/oferta.png);
+}
+#btInsertarpro {
+    grid-column: 3;
+    grid-row: 2;
+    background-image: url(../imagenes/newPro.png);
+}
+
+#btVerOfertas{
+    grid-column: 4;
+    grid-row: 2;
+    background-image: url(../imagenes/visuOffer.png);
+}
+

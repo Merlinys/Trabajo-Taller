@@ -1,0 +1,65 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-size: 150%;
+    color: #ffffff;
+    background: url(../imagenes/background.jpg);
+    background-size: cover;
+}
+
+.recuadro{
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.836);
+    border-radius: 20px;
+}
+#titulo{
+    display:grid;
+    grid-template-columns: [primera]100% [segunda]90% [tercera]60%[end];/*mueve el boton de cerrar sesion*/
+    grid-template-rows: repeat(30[opcion]) [end];
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    color:white;
+    background: gray;
+    border: none;
+    border-radius: 10px; 
+    text-align:end;
+}
+
+#opciones {
+    display: grid;
+    grid-template-columns: [primera]60% repeat(8,16% [opcion]) [end];
+    grid-template-rows: [primera] 115% [segundo] 10% [end];
+    width: 80%;
+    height: 190%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.btnOption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 95%;
+    color:#ffffffef;
+    border: none;
+    border-radius: 10px; 
+    background-color: #99a8b3;
+    background: grey;
+    text-align:center;
+    height: 2cm;
+    width: 5cm;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+
+button:hover{
+	background: green; /*cambia de color el hover*/
+}

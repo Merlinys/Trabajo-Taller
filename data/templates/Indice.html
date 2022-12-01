@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="recuadro" id="titulo">
+        <center><i><h1>Modos de Usuario</h1></i></center>
+    </div>
+
+    <div class="recuadro" id="opciones">
+        <center>
+            <form action="/SesionAdmin" id ="Sesion" >{% csrf_token %}
+                <i><h3>ADMINISTRADOR</h3></i>
+                <center><img src="{% static 'imagenes/admin.png' %}" alt=""></center>
+                <button class="btnOption btn-primary" type="submit" id="Admin">Seleccionar</button>
+            </form>
+        </center>
+        <center>
+            <form >
+                <i><h3>GARZON</h3></i>
+                <img src="{% static 'imagenes/Garzon.png' %}">
+                <button class="btnOption btn-primary" type="submit" id="Garzon">Seleccionar</button>
+            </form>
+        </center>
+    </div>
+
+</body>
+</html>
