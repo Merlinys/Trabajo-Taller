@@ -6,11 +6,14 @@
     
     <link rel="stylesheet" href="{% static 'css/registroOferta.css'  %}">
     <title>Nuevo Producto</title>
+    
 </head>
 <body>
+
     <section class="caja">
         <center><i><h4>Registro de nuevo Producto</h4></i></center>
         <form action="/addProducto" method="POST" id="agregarProducto">
+
             <center>
             {%csrf_token%}
             <input class="datos" type="text" name="nombre" id="nombre" placeholder="Nombre del Producto" required="">
@@ -22,11 +25,14 @@
             <input class="datos" type="text" name="prodDis" id="precio" placeholder="Cantidad producto disponible" required="">
             <input class="register" type= "submit" value="Registrar">
             <input class="register" type="reset" value="Eliminar">
-        </form>
             </center>
-        <form action="/optiadm" id="regresar">
-        <center><input class = "register" type="submit" value="Volver menu administrador" id="Volver" ></center>
+
         </form>
+
+        <form action="/optiadm" id="regresar">
+            <center><input class = "register" type="submit" value="Volver menu administrador" id="Volver" ></center>
+        </form>
+
     </section> 
 </body>
 </html>

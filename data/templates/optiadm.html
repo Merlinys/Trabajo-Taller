@@ -4,16 +4,22 @@
     {% load static %}
     <meta charset="UTF-8">
     <link rel="stylesheet"  href="{% static 'css/opt-adm1.css' %}">
-    <title>Opciones administrador</title>
+    <title>Menu administrador</title>
 </head>
+
 <body>
+
     <div class = "recuadro" id="user">
+        <form action="" id="datosAdmin">
         <p>Usuario: </br>Fecha:</br>RUT: </p>
+        </form>
         <form action="/SesionAdmin" id ="Sesion"> {% csrf_token %} 
             <input class = "boton" type="submit" value="Cerrar Sesion" id="btCerrar" >
         </form>
     </div>
+
     <div class="recuadro" id="opciones">
+
         <p id="labelOpciones">Opciones de administrador</p>
         <center>
             <form>
@@ -23,7 +29,7 @@
         </center> 
         
         <center>
-            <form action="/addProducto" id="Addproducto">{% csrf_token %}>
+            <form action="/addProducto" id="Addproducto">{% csrf_token %}
                 <h3>Agregar Producto</h3>
                 <button class = "btnOpcion btn-primary" type="submit"  id="btInsertarpro"></button>
             </form>
@@ -35,7 +41,9 @@
                 <button class="btnOpcion btn-primary" type="button" data-toggle="modal" id="btVerOfertas"> </button>
             </form>    
         </center>
+    
     </div>
+
     
 </body>
 </html>
