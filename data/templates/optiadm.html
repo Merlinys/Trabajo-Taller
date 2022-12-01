@@ -9,19 +9,24 @@
 
 <body>
 
+    <!--Boton cerrar sesion  -->
     <div class = "recuadro" id="user">
+
         <form action="" id="datosAdmin">
-        <p>Usuario: </br>Fecha:</br>RUT: </p>
+            <p>Usuario:  </br>Fecha:</br>RUT: </p>
         </form>
+
         <form action="/SesionAdmin" id ="Sesion"> {% csrf_token %} 
             <input class = "boton" type="submit" value="Cerrar Sesion" id="btCerrar" >
         </form>
+
     </div>
 
     <div class="recuadro" id="opciones">
 
         <p id="labelOpciones">Opciones de administrador</p>
         <center>
+            <!--Boton añadir oferta redirecciona a la pestaña añadir oferta  -->
             <form>
                 <h3>Añadir Oferta</h3>
                 <button class = "btnOpcion btn-primary" type="submit" id="btAñadiroferta"></button>
@@ -29,6 +34,7 @@
         </center> 
         
         <center>
+            <!--Boton añadir Producto redirecciona a la pestaña añadir Producto  -->
             <form action="/addProducto" id="Addproducto">{% csrf_token %}
                 <h3>Agregar Producto</h3>
                 <button class = "btnOpcion btn-primary" type="submit"  id="btInsertarpro"></button>
@@ -36,6 +42,7 @@
         </center>
         
         <center>
+            <!--Boton Visualizar Ofertas redirecciona a la pestaña Visualizar oferta  -->
             <form action="/verOfertas" id="verOfertas" >{% csrf_token %}
                 <h3>Visualizar Ofertas</h3>
                 <button class="btnOpcion btn-primary" type="button" data-toggle="modal" id="btVerOfertas"> </button>

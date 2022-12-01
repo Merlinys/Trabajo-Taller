@@ -23,11 +23,20 @@
             <input class="datos" type="text" name="precio" id="precio" placeholder="Precio" required="">
             <input class="datos" type="text" name="tipoProd" id="tp_id" placeholder="Tipo de Producto" required="">
             <input class="datos" type="text" name="prodDis" id="precio" placeholder="Cantidad producto disponible" required="">
+            <i><h4>
+            {%if messages %}
+                {% for msg in messages%}
+                <b>{{msg}}</b>
+                {% endfor %}
+                {% endif %}
+            </h4></i>
             <input class="register" type= "submit" value="Registrar">
             <input class="register" type="reset" value="Eliminar">
             </center>
 
         </form>
+        <center>
+
 
         <form action="/optiadm" id="regresar">
             <center><input class = "register" type="submit" value="Volver menu administrador" id="Volver" ></center>

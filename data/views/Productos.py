@@ -1,8 +1,8 @@
 from django.shortcuts import render
-
-from django.core.exceptions import ObjectDoesNotExist
+from django.contrib import messages
 
 from data.models import Admin,Producto,TipoProd
+
 
 
 def agregarProducto(request):
@@ -14,7 +14,12 @@ def agregarProducto(request):
             prod_precio = request.POST['precio']
             prod_disponible = request.POST['prodDis']
             prod_fecha_ingreso = request.POST['fechaingreso']
-            Producto(prod_id = prod_id,admin_rut=admin_rut,tp =tp,prod_nombre =prod_nombre,prod_precio =prod_precio,prod_disponible = prod_disponible,prod_fecha_ingreso = prod_fecha_ingreso).save()
+            try:
+                Prod = Producto.objects.get(prod_id = prod_id)
+            except Producto.DoesNotExist:
+                Producto(prod_id = prod_id,admin_rut=admin_rut,tp =tp,prod_nombre =prod_nombre,prod_precio =prod_precio,prod_disponible = prod_disponible,prod_fecha_ingreso = prod_fecha_ingreso).save()
+                return render(request,"addProducto.html", {},status=200)
+            messages.error(request,'El producto ingresado ya existe')
             return render(request,"addProducto.html", {},status=200)
     else:
         return render(request,"addProducto.html", {},status=200)

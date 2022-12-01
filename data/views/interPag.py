@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import datetime
+
 # Create your views here.
 #inicia la pestaña con la pagina principal
 def home(request):
@@ -13,5 +14,8 @@ def seAdmin(request):
 def addProducto(request):
     return render(request, "addProducto.html", {},status=200)
 
+#Pantalla ver Oferta
 def verOferta(request):
     return render(request,'verOfertas.html',{},status=200)
+
+
