@@ -24,7 +24,6 @@ urlpatterns = [
     path('SesionAdmin',interPag.seAdmin),
     path('addProducto',Productos.agregarProducto ,name='post-agregar'),
     path('optiadm',logIn.logIn),
-
     path('verOfertas',interPag.verOferta),
    
 ]

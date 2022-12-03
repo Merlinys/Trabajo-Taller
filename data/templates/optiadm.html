@@ -13,9 +13,8 @@
     <div class = "recuadro" id="user">
 
         <form action="" id="datosAdmin">
-            <p>Usuario:  </br>Fecha:</br>RUT: </p>
+            <p>Usuario:  </br>RUT:</br>Fecha:  </p>
         </form>
-
         <form action="/SesionAdmin" id ="Sesion"> {% csrf_token %} 
             <input class = "boton" type="submit" value="Cerrar Sesion" id="btCerrar" >
         </form>
@@ -45,7 +44,7 @@
             <!--Boton Visualizar Ofertas redirecciona a la pestaña Visualizar oferta  -->
             <form action="/verOfertas" id="verOfertas" >{% csrf_token %}
                 <h3>Visualizar Ofertas</h3>
-                <button class="btnOpcion btn-primary" type="button" data-toggle="modal" id="btVerOfertas"> </button>
+                <button class="btnOpcion btn-primary" type="submit" data-toggle="modal" id="btVerOfertas"> </button>
             </form>    
         </center>
     

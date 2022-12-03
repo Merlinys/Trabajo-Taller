@@ -13,13 +13,11 @@
     <section class="caja">
         <center><i><h4>Registro de nuevo Producto</h4></i></center>
         
-
             <center>
             <form action="/addProducto" method="POST" id="agregarProducto">
             {%csrf_token%}
             <input class="datos" type="text" name="nombre" id="nombre" placeholder="Nombre del Producto" required="">
             <input class="datos" type="text" name="identificador" id="id_pro" placeholder="ID del Producto" required="">
-            <input class="datos" type="datetime" name="fechaingreso" id="prod_f-ingreso" placeholder="Fecha ingreso de Producto (Formato: YYYY-MM-DD)" required="">
             <input class="datos" type="text" name="Run" id="run_admin" placeholder="RUN (Sin puntos y con guion)" required="">
             <input class="datos" type="text" name="precio" id="precio" placeholder="Precio" required="">
             <input class="datos" type="text" name="tipoProd" id="tp_id" placeholder="Tipo de Producto" required="">
