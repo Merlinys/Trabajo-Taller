@@ -21,7 +21,7 @@ def agregarProducto(request):
             except Producto.DoesNotExist:
                 Producto(prod_id = prod_id,admin_rut=admin_rut,tp =tp,prod_nombre =prod_nombre,prod_precio =prod_precio,prod_disponible = 1,prod_fecha_ingreso = date_object).save()
                 messages.success(request,"El producto se ingreso de forma correcta ")
-                return render(request,"addProducto.html", {},status=200)
+                return render(request,"addProducto.html", {},status=200)            
             messages.error(request,'El producto ingresado ya existe')
             return render(request,"addProducto.html", {},status=200)
     else:
