@@ -15,7 +15,5 @@ def logIn(request):
             usuario = Admin.objects.get(admin_mombre=request.POST["txt"],admin_rut=request.POST["rut"],admin_pass=request.POST["contra"])      
         except ObjectDoesNotExist:
             return render(request, "SesionAdmin.html", {},status=404)    
-    return render(request, "optiadm.html", {},status=200)  
+    return render(request, "optiadm.html",{} )  
 
-def runUser():
-    print("A")
