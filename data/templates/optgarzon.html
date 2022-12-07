@@ -8,16 +8,20 @@
     <title>Menu Garzon</title>
 </head>
 <body>
+
     <div class = "recuadro" id="user">
         <p>Fecha:</p>
-        <input class = "boton" type="button" value="Volver" id="btvolver" >
+        <form action="/Indice" id ="back"> {% csrf_token %}
+            <input class = "boton" type="submit" value="Volver" id="btvolver" >
+        </form>
     </div>
+
     <div class="recuadro" id="opciones">
         <p id="labelOpciones">Opciones <br>de Garzon</p>
         <center>
-            <form>
+            <form action = "/Comanda" id="Nueva comanda">
                 <h3>Inciar Comanda </h3>
-                <button class = "btnOpcion btn-primary" type="button" id="btnewComanda"></button>
+                <button class = "btnOpcion btn-primary" type="submit" id="btnewComanda" ></button>
             </form>
         </center> 
         

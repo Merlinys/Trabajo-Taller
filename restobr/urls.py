@@ -26,6 +26,8 @@ urlpatterns = [
     path('optiadm',logIn.logIn),
     path('verOfertas',interPag.verOferta),
     path('optgarzon',interPag.garzon),
+    path('Comanda',interPag.newComanda),
+    path('Indice',interPag.home) 
    
 ]
 

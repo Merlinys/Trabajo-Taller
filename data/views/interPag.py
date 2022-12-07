@@ -18,5 +18,10 @@ def addProducto(request):
 def verOferta(request):
     return render(request,'verOfertas.html',{},status=200)
 
+#Pantalla garzon
 def garzon(request):
     return render(request,'optgarzon.html',{},status=200)
+
+#pantalla nueva comanda
+def newComanda(request):
+    return render(request,'Comanda.html',{},status=200)
