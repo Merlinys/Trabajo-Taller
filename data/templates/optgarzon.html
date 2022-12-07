@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/opt-garzon1.css'%}">
+    
+    <title>Menu Garzon</title>
+</head>
+<body>
+    <div class = "recuadro" id="user">
+        <p>Fecha:</p>
+        <input class = "boton" type="button" value="Volver" id="btvolver" >
+    </div>
+    <div class="recuadro" id="opciones">
+        <p id="labelOpciones">Opciones <br>de Garzon</p>
+        <center>
+            <form>
+                <h3>Inciar Comanda </h3>
+                <button class = "btnOpcion btn-primary" type="button" id="btnewComanda"></button>
+            </form>
+        </center> 
+        
+        <center>
+            <form>
+                <h3>Comandas Activas</h3>
+                <button class = "btnOpcion btn-primary" type="button"  id="btcomAct"></button>
+            </form>
+        </center>
+        
+        <center>
+            <form>
+                <h3>Realizar Pago</h3>
+                <button class="btnOpcion btn-primary" type="button" id="btPayment"> </button>
+            </form>    
+        </center>
+
+        <center>
+            <form>
+                <h3>Menu</h3>
+                <button class="btnOpcion btn-primary" type="button" id="btMenu"></button>
+            </form>
+        </center>
+    </div>
+    
+</body>
+</html>

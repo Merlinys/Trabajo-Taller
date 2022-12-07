@@ -25,6 +25,7 @@ urlpatterns = [
     path('addProducto',Productos.agregarProducto ,name='post-agregar'),
     path('optiadm',logIn.logIn),
     path('verOfertas',interPag.verOferta),
+    path('optgarzon',interPag.garzon),
    
 ]
 

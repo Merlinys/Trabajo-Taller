@@ -38,6 +38,9 @@ body {
     transition: .2s ease-in;
 }
 
+label h2{
+    font-size: 110%;
+}
 label{
     display: flex;
     align-items: center;
@@ -54,8 +57,7 @@ select{
     width: 20%;
     border-radius: 5px;
     margin-left: 40%;
-    margin-bottom: 50px;
-    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .btAceptar:hover{
@@ -65,22 +67,20 @@ select{
 /*TITULO*/
 #titulo{
     display:grid;
-    grid-template-columns: [primera]100% [segunda]90% [tercera]60%[end];/*mueve el boton de cerrar sesion*/
-    grid-template-rows: repeat(30[opcion]) [end];
     width: 80%;
     margin-left: 10%;
     border-radius: 20px;
     padding: 20px;
 }
-/*INFOMRACION QUE SE DEBE ACTUALIZAR SEGUN QUE OFERTA SE ELIGA*/
+/*INFOMRACION QUE SE DEBE ACTUALIZAR SEGUN QUE OFERTA SE ELIJA*/
 #Info{
     display: grid;
-    width: 27%;
+    margin-bottom: 20px;
+    margin-left: 290px;
+    width: 60%;
     height: 190%;
-    margin-left: 35%;
-    margin-top: 2%;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
 }
 
 

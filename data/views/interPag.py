@@ -18,4 +18,5 @@ def addProducto(request):
 def verOferta(request):
     return render(request,'verOfertas.html',{},status=200)
 
-
+def garzon(request):
+    return render(request,'optgarzon.html',{},status=200)

@@ -1,0 +1,156 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    color: #ffffff;
+    background: url(../imagenes/background.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.caja{
+    width: 600px;
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.836);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.box{
+    width: 1500px;
+    height: 290px;
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.836);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.datos{
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+#Producto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 4px;
+    display: relative;
+    margin-left: 7%;
+    height: 45px;
+    width: 440px;
+    color: white;
+    background-color: gray;
+}
+
+#modifier_cantidad{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 4px;
+    display: relative;
+    margin-left: 7%;
+    height: 45px;
+    width: 440px;
+    color: white;
+    background-color: gray;
+}
+
+#modifier_precio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 4px;
+    display: relative;
+    margin-left: 7%;
+    height: 45px;
+    width: 440px;
+    color: white;
+    background-color: gray;
+}
+
+.box .register{ /*por alguna razon si cambio de posicion este , se cambian las posiciones de los otros btns igual*/
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 5cm;
+    height: 1.6cm;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    border: none;
+    border-radius: 10px; 
+    background-color: gray;
+    text-align:center;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.box .back{
+    margin-left: 220px;
+    height: 1.6cm;
+    width: 6cm;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    border: none;
+    border-radius: 10px; 
+    background-color: gray;
+    text-align:center;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.box .cancel{
+    margin-left: 300px;
+    width: 5cm;
+    height: 1.6cm;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    border: none;
+    border-radius: 10px; 
+    background-color: gray;
+    text-align:center;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+
+.cancel:hover{
+    background: red;
+}
+.register:hover{
+	background: green; 
+}
+.back:hover{
+    background: blue;
+}
