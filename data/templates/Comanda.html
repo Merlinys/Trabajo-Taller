@@ -14,6 +14,7 @@
     <div class="caja">
         <center><h3>Datos de la comanda</h3></center>
         <center>
+            <form action="/nuevaComanda" id= "newcomand">
             <input class="datos" type="text" name="nombre" id="Name_cli" placeholder="Nombre del Cliente">
             <input class="datos" type="text" name="Rut_Cli" id="RUN_Cli" placeholder="RUN Cliente (Sin puntos y con guion)">
             <input class="datos" type="text" name="Rut_Gar" id="RUN_Gar" placeholder="RUN Garzon (Sin puntos y con guion)">
@@ -46,7 +47,7 @@
                     </select>
                 </td>
                 <td><input type="number" value="0" id="modifier_cantidad"></td>
-                <td> <input type="text" id="modifier_precio"></td>
+                <td> <input type="text" id="modifier_precio" readonly="readonly"></td>
                 </tr>
 
                 <tr>
@@ -61,7 +62,7 @@
                     </select>
                 </td>
                 <td><input type="number" value="0" id="modifier_cantidad"></td>
-                <td> <input type="text" id="modifier_precio"></td>
+                <td> <input type="text" id="modifier_precio"readonly="readonly"></td>
                 </tr>
 
                 <tr>
@@ -76,7 +77,7 @@
                     </select>
                 </td>
                 <td><input type="number" value="0" id="modifier_cantidad"></td>
-                <td> <input type="text" id="modifier_precio"></td>
+                <td> <input type="text" id="modifier_precio"readonly="readonly"></td>
                 </tr>
 
                 <tr>
@@ -91,13 +92,14 @@
                     </select>
                 </td>
                 <td><input type="number" value="0" id="modifier_cantidad"></td>
-                <td> <input type="text" id="modifier_precio"></td>
+                <td> <input type="text" id="modifier_precio"readonly="readonly"></td>
                 </tr>
             </table>
         </form>
+    </form>
         <input class="register" type="submit" value="Registrar">
         <input class="back" type="button" value="Volver Menu Garzon">
-        <input class="cancel" type="button" value="Cancelar">
+        <input class="cancel" type="reset" value="Cancelar">
     </div>
     
         

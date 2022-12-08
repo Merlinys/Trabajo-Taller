@@ -105,16 +105,7 @@ class Cliente(models.Model):
         db_table = 'cliente'
 
 
-class ComOf(models.Model):
-    com = models.OneToOneField('Comanda', models.DO_NOTHING, db_column='COM_ID', primary_key=True)  # Field name made lowercase.
-    of = models.ForeignKey('Oferta', models.DO_NOTHING, db_column='OF_ID')  # Field name made lowercase.
-    com_of_cantidad = models.IntegerField(db_column='COM_OF_CANTIDAD', blank=True, null=True)  # Field name made lowercase.
-    com_of_precio = models.IntegerField(db_column='COM_OF_PRECIO', blank=True, null=True)  # Field name made lowercase.
 
-    class Meta:
-        managed = False
-        db_table = 'com_of'
-        unique_together = (('com', 'of'),)
 
 
 class ComProd(models.Model):

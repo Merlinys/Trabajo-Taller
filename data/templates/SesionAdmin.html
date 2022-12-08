@@ -3,22 +3,28 @@
 <head>
 	{% load static %}
 	<title>Admin</title>
+	
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/estilo2.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/estilo2.css'%}">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
-<img src={% static 'imagenes/loginICON.png' %} class="icono"alt="">
+<img src="{% static 'imagenes/loginICON.png'%}" class="icono"alt="">
 <body>
 	<div class="caja-login">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
 			<div class="signup">
-				<form action="/optiadm" method= "POST" id = "loginAdm">{%csrf_token%}
+				<form action="/optiadm" id="option admin" >{%csrf_token%}
 					<label for="chk" aria-hidden="true">ADMINISTRADOR</label>
 					<input type="text" name="txt" placeholder="Nombre" required="">
-					<input type="text" name= "rut" placeholder="RUT" required="">
+					<input type="text" name= "Id" placeholder="RUT" required="">
 					<input type="password" name="contra" placeholder="Contraseña" required="">
-					<button>Entrar</button>
+					<!--BOTONONES-->	
+					<button>Entrar</button>>
 				</form>
+				<form action="/Indice" id="regresar">
+					<button>Menu Principal</button>
+				</form>
+					
 			</div>
 	</div>
 </body>
