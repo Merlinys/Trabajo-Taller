@@ -1,0 +1,113 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    color: #ffffff;
+    background: url(../imagenes/background.jpg);
+    background-size: cover;
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+.caja{
+    width: 800px;
+    background-color: #EEFFFB;
+    background: rgba(5, 5, 5, 0.836);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#tituloInit{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.caja form{
+    padding: 10px;
+    width: 800px;
+}
+
+.caja form .fila{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.caja form .fila .columna{
+    flex: 1 1 250px;
+}
+
+.caja form .fila .columna .titulo{
+    font-size: 20px;
+    color: gray;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.caja form .fila .columna{
+    flex: 1 1 250px;
+}
+
+
+.caja form .fila .columna .caja-input{
+    margin: 15px 0;
+}
+
+.caja form .fila .columna .caja-input span{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.caja form .fila .columna .caja-input input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.caja form .fila .columna .caja-input input:focus{
+    border: 1px solid #000;
+}
+
+.caja form .fila .columna .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.caja form .fila .columna .flex .caja-input{
+    margin-top: 5px;
+}
+
+.caja form .btn-pago{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background-color: gray;
+    color: white;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.caja form .fila .columna .caja-input select{
+    width: 400px;
+    height: 36px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px; 
+
+}
+
+.caja form .btn-pago:hover{
+	background: green; 
+}

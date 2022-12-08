@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/pago.css'%}">
+    <title>Pagina-pago</title>
+</head>
+<body>
+    <div class="caja" id="tituloInit">
+        <center><i><h1>Cancelar Comanda</h1></i></center>
+    </div>
+    <div class="caja">
+
+        <form action="">
+
+            <div class="fila">
+
+                <div class="columna">
+                    <i><h3 id="titulo">Datos Comanda</h3></i>
+
+                    <div class="caja-input">
+                        <span>Nombre Completo:</span>
+                        <input type="text" placeholder="Nombre Completo">
+                    </div>
+
+                    <div class="caja-input">
+                        <span>Rut Cliente:</span>
+                        <input type="text" placeholder="RUT(Sin puntos y con guion)">
+                    </div>
+
+                    <div class="caja-input">
+                        <span>Rut Garzon:</span>
+                        <input type="text" placeholder="RUT(Sin puntos y con guion)">
+                    </div>
+
+                    <div class="flex">
+                        <div class="caja-input">
+                            <span>ID de venta:</span>
+                            <input type="text" placeholder="ID venta">
+                        </div>
+
+                        <div class="caja-input">
+                            <span>Nro Boucher:</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="columna">
+                    <i><h3 id="titulo">Pago</h3></i>
+                    
+                    <div class="caja-input">
+                        <span>Tipo de Pago:</span> <!--Lo deje como un desplegable tenia pensado dejarlo en imagenes-->
+                        <select id="metodos_pago">
+                            <optgroup label="Tarjeta de Credito"> <!--Si se selecciona este metodo de pago, se debe activar el campo "Nro de Tarjeta"-->
+                                <option value="Visa">Visa</option>
+                                <option value="Mastercard">Mastercard</option>
+                                <option value="PayPal">Paypal</option>
+                            </optgroup>
+                            <option value="Debito">Cuenta Rut</option>
+                            <option value="Transferencia">Transferencia</option>
+                            <option value="Sodexo">Sodexo</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <span>Bancos Disponibles:</span> 
+                        <select id="Bancos">
+                            <option value="Estado">Banco Estado</option>
+                            <option value="Banco Chile">Banco de Chile</option>
+                            <option value="Falabella">Banco Falabella</option> <!--no recuerdo si hay mas bancos lol-->
+                            <option value="bbva">Banco BBVA</option>
+                            <option value="bci">Banco BCI</option>
+                            <option value="Scotibank">Scotibank</option>
+                            <option value="Ripley">Banco Ripley</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <span>Nro de la Tarjeta:</span>
+                        <input type="text" placeholder="1111-2222-3333-4444"><!--campo que se debe activar solamente si selecciona una "Tarjeta de credito"-->
+                    </div>
+
+                    <div class="flex">
+                        <div class="caja-input">
+                            <span>Monto:</span>
+                            <input type="number" placeholder="$CLP">
+                        </div>
+
+                        <div class="caja-input">
+                            <span>Fecha:</span>
+                            <input type="date" placeholder="YYYY-MM-DD">
+                        </div>
+
+                        <div class="caja-input">
+                            <span>Hora:</span>
+                            <input type="time" placeholder="">
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <input type="submit" value="Proseguir con el pago" class="btn-pago">
+        </form>
+    </div>
+</body>
+</html>

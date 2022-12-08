@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/registroProducto.css'  %}">
+    <title>Nueva Oferta</title>
+</head>
+<body>
+    <section class="caja">
+        <center><i><h4>Registro de Nueva oferta</h4></i></center>
+        <center>
+        <input class="datos" type="number" name="nombre" id="nombre" placeholder="Id de la oferta">
+        <input class="datos" type="text" name="identificador" id="run_adm" placeholder="RUN (Sin puntos y con guion)">
+        <input class="datos" type="datetime" name="fechaI" id="OFInicio" placeholder="Fecha de Inicio (Formato: YYYY-MM-DD hh:mm:ss)">
+        <input class="datos" type="datetime" name="fechaF" id="OFFin" placeholder="Fecha de termino (Formato: YYYY-MM-DD hh:mm:ss)">
+        <input class="datos" type="text" name="precio" id="precio" placeholder="Precio ">
+        </center>
+        <input class="register" type= "submit" value="Registrar">
+        <input class="cancel" type="button" value="Cancelar">
+        <input class="back" type="button" value="Volver menu administrador">
+    </section>
+
+    <section class="caja">
+        <center><i><h4>Añadir Productos a una Oferta</h4></i></center>
+        <center>
+        <input class="datos" type="number" name="id_prod" id="prod_id" placeholder="Id del Producto">
+        <input class="datos" type="number" name="id_offer" id="id_offer" placeholder="Id de la oferta">
+        </center>
+        <input class="register" type= "submit" value="Registrar">
+        <input class="cancel" type="button" value="Cancelar">
+    </section>
+    
+</body>
+</html>

@@ -20,14 +20,17 @@ from data.views import interPag,logIn,Productos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #pantalla principal
     path('', interPag.home),
+    #Administrador y sus opciones
     path('SesionAdmin',interPag.seAdmin),
     path('addProducto',Productos.agregarProducto ,name='post-agregar'),
-    path('optiadm',logIn.logIn),
     path('verOfertas',interPag.verOferta),
+    path('optiadm',logIn.logIn),
+    path('addOferta',interPag.newOferta),
+    #Garzon y sus opciones
     path('optgarzon',interPag.garzon),
     path('Comanda',interPag.newComanda),
-    path('Indice',interPag.home) 
-   
+    path('Indice',interPag.home)   
 ]
 

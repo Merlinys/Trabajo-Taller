@@ -25,3 +25,7 @@ def garzon(request):
 #pantalla nueva comanda
 def newComanda(request):
     return render(request,'Comanda.html',{},status=200)
+
+#Pantalla nueva oferta
+def newOferta(request):
+    return render(request,'addOferta.html',{},status=200)
