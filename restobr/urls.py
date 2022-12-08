@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from data.views import interPag,logIn,Productos
+from data.views import interPag,logIn,Productos,Oferta
 
 
 urlpatterns = [
@@ -27,7 +27,7 @@ urlpatterns = [
     path('addProducto',Productos.agregarProducto ,name='post-agregar'),
     path('verOfertas',interPag.verOferta),
     path('optiadm',logIn.logIn),
-    path('addOferta',interPag.newOferta),
+    path('addOferta',Oferta.agregarOferta),
     #Garzon y sus opciones
     path('optgarzon',interPag.garzon),
     path('Comanda',interPag.newComanda),

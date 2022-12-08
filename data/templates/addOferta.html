@@ -9,16 +9,28 @@
 <body>
     <section class="caja">
         <center><i><h4>Registro de Nueva oferta</h4></i></center>
+        <center><i><h4>
+            {%if messages %}
+                {% for msg in messages%}
+                <b>{{msg}}</b>
+                {% endfor %}
+                {% endif %}
+            </h4></i>
+        </center>
         <center>
-        <input class="datos" type="number" name="nombre" id="nombre" placeholder="Id de la oferta">
-        <input class="datos" type="text" name="identificador" id="run_adm" placeholder="RUN (Sin puntos y con guion)">
-        <input class="datos" type="datetime" name="fechaI" id="OFInicio" placeholder="Fecha de Inicio (Formato: YYYY-MM-DD hh:mm:ss)">
-        <input class="datos" type="datetime" name="fechaF" id="OFFin" placeholder="Fecha de termino (Formato: YYYY-MM-DD hh:mm:ss)">
-        <input class="datos" type="text" name="precio" id="precio" placeholder="Precio ">
+        <form action ="/addOferta" method="POST" id= "agregarOferta">
+        {%csrf_token%}
+        <input class="datos" type="number" name="id" id="nombre" placeholder="Id de la oferta" required="">>
+        <input class="datos" type="datetime" name="fechaI" id="OFInicio" placeholder="Fecha de Inicio (Formato: YYYY-MM-DD)" required="">>
+        <input class="datos" type="datetime" name="fechaF" id="OFFin" placeholder="Fecha de termino (Formato: YYYY-MM-DD)" required="">>
+        <input class="datos" type="text" name="precio" id="precio" placeholder="Precio"  required="">>
         </center>
         <input class="register" type= "submit" value="Registrar">
-        <input class="cancel" type="button" value="Cancelar">
-        <input class="back" type="button" value="Volver menu administrador">
+        <input class="cancel" type="reset" value="Eliminar">
+        </form>
+        <form action="/optiadm" id="regresar">
+            <input class="back" type="submit" value="Volver menu administrador">
+        </form>
     </section>
 
     <section class="caja">
