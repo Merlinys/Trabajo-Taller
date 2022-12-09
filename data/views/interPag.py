@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from data.models import *
 import datetime
 
 # Create your views here.
 #inicia la pestaña con la pagina principal
 def home(request):
     return render(request, "indice.html", {},status=200)
+
+    
 
 # Pantalla de inicio de sesion de admin
 def seAdmin(request):
