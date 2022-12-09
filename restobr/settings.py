@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'restobr.wsgi.application'
 DATABASES = { 
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'restobar',
+            'NAME': 'restobar_testeo',
             'USER': 'root',
-            'PASSWORD': 'Castoria20',
+            'PASSWORD': '12345678kMEGAMANZERO',
             'HOST': 'localhost',
             'PORT': '3306',
             'OPTIONS': {

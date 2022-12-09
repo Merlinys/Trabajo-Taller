@@ -12,7 +12,7 @@ body {
 }
 #user {/*primera caja*/
     display:grid;
-    grid-template-columns: [primera]50% [segunda]40% [tercera]10%[end];/*mueve el boton de cerrar sesion*/
+    grid-template-columns: [primera]80% [segunda]40% [tercera]10%[end];/*mueve el boton de cerrar sesion*/
     grid-template-rows: repeat(10[opcion]) [end];
     width: 80%;
     margin-left: 10%;
@@ -40,7 +40,7 @@ body {
     grid-column: 3;
     grid-row: 1;
     height: 79%;
-    margin-left: -85%;
+    margin-left: 20%;
     background: gray;
     cursor: pointer;
     transition: .2s ease-in;

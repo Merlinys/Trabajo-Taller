@@ -1,20 +1,20 @@
-body{
+body{/*es solo el body lol*/
 	display: flex;
-	justify-content: center; /*centra la caja del login*/
-	align-items: center; /*centra la caja del login*/
-	min-height: 100vh; /*ajusta la altura*/
+	justify-content: center; 
+	align-items: center; 
+	min-height: 100vh; 
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: url(../imagenes/background.jpg);
 }
 
-.caja-login{
-	width: 450px; /*ancho de la caja del login*/
-	height: 500px;/*alto de la caja del login*/
+.caja-login{/*la caja "padre" que contiene todo*/
+	width: 450px; 
+	height: 500px;
 	overflow: hidden;
 	border-radius: 4px;
 	background: rgba(5, 5, 5, 0.836);
 }
-#chk{/*es solo es el titulo que dice "sign"* ademas chk es una id */
+#chk{
 	display: none;
 }
 .signup{
@@ -23,39 +23,37 @@ body{
 	height: 100%;
 }
 label{
-	color: white; /*color y tamaño del "ADMINISTRADOR"*/
+	color: white; 
 	font-size: 2.3em;
-	justify-content: center; /*centra el texto "Sign up"*/
-	display: flex; /*para maquetar el contenido*/
-	margin: 60px; /*tamaño que ocupa la label*/
+	justify-content: center; 
+	display: flex; 
+	margin: 60px; 
 	font-weight: bold;
 	cursor: pointer;
 	transition: .5s ease-in-out;
 }
 input{/*la cajas para poner los datos de la sesion*/
-	width: 60%;/*alto,ancho y color de los inputs*/
+	width: 60%;
 	height: 20px;
 	background: #e0dede;
-	display: flex; /*los hace para se centren*/
-	margin: 20px auto; /*ajustar tamaño de los inputs mas que nada*/
+	display: flex; 
+	margin: 20px auto; 
 	padding: 10px;
 	border: none;
 	outline: none;
 	border-radius: 5px;
 }
-.entrar{/*Diseño del boton*/
-	width: 60%; /*alto,ancho de los botones*/
+.caja-login #iniciar-sesion{/*Diseño del boton*/
+	width: 60%; 
 	height: 40px;
-	margin: 10px auto; /*margen que ocuparan los botones*/
-	justify-content: center; /*para centrarlo con lo demas*/
+	margin: 10px auto; 
+	justify-content: center; 
 	display: block;
-	color: white; /*cambia el color del texto que esta en el boton*/
-	background: gray; /*cambia de color el boton*/
-	font-size: 1em; /*cambia el tamaño de la letra del boton*/
-	font-weight: bold; /*hace mas ancha las letras?*/
-	margin-top: 30px; /*cambia la distancia de las labels*/
-	
-	/*de aqui para abajo es solo estetica*/
+	color: white; 
+	background: gray; 
+	font-size: 1em; 
+	font-weight: bold; 
+	margin-top: 30px;
     outline: none;
 	border: none;
 	border-radius: 5px;
@@ -63,19 +61,17 @@ input{/*la cajas para poner los datos de la sesion*/
 	cursor: pointer;
 }
 
-.goBack{/*Diseño del boton*/
-	width: 60%; /*alto,ancho de los botones*/
+#regresar .back{/*Diseño del boton*/
+	width: 60%; 
 	height: 40px;
-	margin: 10px auto; /*margen que ocuparan los botones*/
-	justify-content: center; /*para centrarlo con lo demas*/
+	margin: 10px auto; 
+	justify-content: center; 
 	display: block;
-	color: white; /*cambia el color del texto que esta en el boton*/
-	background: gray; /*cambia de color el boton*/
-	font-size: 1em; /*cambia el tamaño de la letra del boton*/
-	font-weight: bold; /*hace mas ancha las letras?*/
-	margin-top: 30px; /*cambia la distancia de las labels*/
-	
-	/*de aqui para abajo es solo estetica*/
+	color: white; 
+	background: gray; 
+	font-size: 1em;
+	font-weight: bold; 
+	margin-top: 25px; 
     outline: none;
 	border: none;
 	border-radius: 5px;
@@ -83,11 +79,11 @@ input{/*la cajas para poner los datos de la sesion*/
 	cursor: pointer;
 }
 
-.entrar:hover{
+#iniciar-sesion:hover{
 	background: green; /*cambia de color el hover*/
 }
-.goBack:hover{
-	background: red;
+#regresar .back:hover{
+	background: blue;
 }
 .icono{
 	margin: auto;

@@ -39,11 +39,9 @@ p{
 #btvolver {
     font-size: 160%;
     text-align: center;
-    grid-column: 3;
-    grid-row: 1;
-    width: 150%;
+    width: 35%;
     height: 80%;
-    margin-left: -60%;
+    margin-left: 87%;
     background: gray;
     cursor: pointer;
     transition: .2s ease-in;
