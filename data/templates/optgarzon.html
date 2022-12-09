@@ -10,7 +10,12 @@
 <body>
 
     <div class = "recuadro" id="user">
-        <p>Fecha:</p>
+        <p>Fecha:
+        <script> 
+            var d = new Date();
+            document.write(d.getDate() + "/" + (d.getMonth() +1) + "/" + d.getFullYear());
+            </script>
+        </p>
         <form action="/Indice" id ="back"> {% csrf_token %}
             <input class = "boton" type="submit" value="Volver" id="btvolver" >
         </form>
