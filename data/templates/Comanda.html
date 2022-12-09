@@ -12,21 +12,26 @@
             <input class="back" type="submit" value="Volver Menu Garzon">
         </form></h1></i></center>
         <center><i><h1>Nueva Comanda</h1></i></center>
-        
+        <center><i><h3>
+            {%if messages %}
+                {% for msg in messages%}
+                <b>{{msg}}</b>
+                {% endfor %}
+                {% endif %}
+            </h3></i>
     
     </div>
-<form action= "/NuevaComanda" method="POST" id= "NC">
+<form action= "/NuevaComanda" method="POST" id= "NC">{%csrf_token%}
     <div class="caja">
         <center><h3>Datos de la comanda</h3></center>
         <center>
-
-            <input class="datos" type="text" name="nombre" id="Name_cli" placeholder="Nombre del Cliente">
-            <input class="datos" type="text" name="Rut_Cli" id="RUN_Cli" placeholder="RUN Cliente (Sin puntos y con guion)">
-            <input class="datos" type="text" name="Rut_Gar" id="RUN_Gar" placeholder="RUN Garzon (Sin puntos y con guion)">
-            <input class="datos" type="text" name="identi_venta" id="id_Venta" placeholder="Id de la Venta">
-            <input class="datos" type="number" name="cantidad" id="cant_clientes" placeholder="NRO de Personas">
-            <input class="datos" type="number" name="mesa" id="nro_Mesa" placeholder="NRO de la Mesa">
-            <input class="datos" type="datetime" name="fecha" id="Fecha" placeholder="Fecha (Formato: YYYY-MM-DD)">
+            <input class="datos" type="text" name="id_com" id="idcom" placeholder="ID de Comanda" >
+            <input class="datos" type="text" name="nombre" id="Name_cli" placeholder="Nombre del Cliente" >
+            <input class="datos" type="text" name="Rut_Cli" id="RUN_Cli" placeholder="RUN Cliente (Sin puntos y con guion)" requiered="">
+            <input class="datos" type="text" name="Rut_Gar" id="RUN_Gar" placeholder="RUN Garzon (Sin puntos y con guion)" requiered="">
+            <input class="datos" type="number" name="cantidad" id="cant_clientes" placeholder="NRO de Personas" requiered="">
+            <input class="datos" type="number" name="mesa" id="nro_Mesa" placeholder="NRO de la Mesa" requiered="">
+            
             
         </center>
     </div>
