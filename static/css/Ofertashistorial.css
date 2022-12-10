@@ -75,7 +75,6 @@ select{
 /*INFOMRACION QUE SE DEBE ACTUALIZAR SEGUN QUE OFERTA SE ELIJA*/
 #Info{
     display: grid;
-    margin-bottom: 20px;
     margin-left: 290px;
     width: 60%;
     height: 190%;
