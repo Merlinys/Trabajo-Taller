@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="{% static 'css/pago.css'%}">
     <title>Pagina-pago</title>
 </head>
+
 <body>
     <div class="caja" id="tituloInit">
         <center><i><h1>Cancelar Comanda</h1></i></center>
+        <center><i><h4>
+            {%if messages %}
+                {% for msg in messages%}
+                <b>{{msg}}</b>
+                {% endfor %}
+                {% endif %}
+            </h4></i>
+        </center>
     </div>
+    
     <div class="caja">
 
-        <form action="">
+        <form  action = '/pagar' method= "POST" id= 'pagar'>{%csrf_token%}
 
             <div class="fila">
 
@@ -27,23 +37,28 @@
 
                     <div class="caja-input">
                         <span>Rut Cliente:</span>
-                        <input type="text" placeholder="RUT(Sin puntos y con guion)">
+                        <input type="text" name= 'Rut_Cliente' placeholder="RUT(Sin puntos y con guion)" id="Cli_rut" required="">
                     </div>
 
                     <div class="caja-input">
                         <span>Rut Garzon:</span>
-                        <input type="text" placeholder="RUT(Sin puntos y con guion)">
+                        <input type="text" name = "Garzon_Rut" placeholder="RUT(Sin puntos y con guion)" required="">
                     </div>
 
                     <div class="flex">
                         <div class="caja-input">
-                            <span>ID de venta:</span>
-                            <input type="text" placeholder="ID venta">
+                            <span>ID de Comanda:</span>
+                            <input type="text" placeholder="ID Comanda" name = "idComanda" required="">
+                        </div>
+
+                        <div class="caja-input">
+                            <span>ID venta:</span>
+                            <input type="text" placeholder="ID nueva venta" required="">
                         </div>
 
                         <div class="caja-input">
                             <span>Nro Boucher:</span>
-                            <input type="text" placeholder="123 456">
+                            <input type="text" placeholder="123 456" required="">
                         </div>
                     </div>
 
@@ -86,8 +101,8 @@
 
                     <div class="flex">
                         <div class="caja-input">
-                            <span>Monto:</span>
-                            <input type="number" placeholder="$CLP">
+                            <span>Monto:</span> 
+                            <input type="number" placeholder="$CLP" required="">
                         </div>
 
                         <div class="caja-input">

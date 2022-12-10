@@ -32,3 +32,9 @@ def newComanda(request):
 #Pantalla nueva oferta
 def newOferta(request):
     return render(request,'addOferta.html',{},status=200)
+
+def menu(request):
+    return render(request,'Carta.html',{},status=200)
+
+def pago(request):
+    return render(request,'payment.html',{},status=200)
