@@ -3,7 +3,7 @@ body{
     font-size: 16px;
     line-height: 22px;
     color: #222;
-    background-image: url(imagenes/background.jpg);
+    background-image: url(../imagenes/background.jpg);
 }
 *{
     margin: 0;
