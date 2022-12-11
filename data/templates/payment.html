@@ -47,13 +47,13 @@
 
                     <div class="flex">
                         <div class="caja-input">
-                            <span>ID de Comanda:</span>
-                            <input type="text" placeholder="ID Comanda" name = "idComanda" required="">
+                            <span>ID Comanda:</span>
+                            <input type="number" placeholder="ID Comanda" name = "idComanda" required="">
                         </div>
 
                         <div class="caja-input">
                             <span>ID venta:</span>
-                            <input type="text" placeholder="ID nueva venta" required="" name ="id venta">
+                            <input type="number" placeholder="ID nueva venta" required="" name ="id venta">
                         </div>
 
                         <div class="caja-input">
@@ -69,25 +69,12 @@
                     
                     <div class="caja-input">
                         <span>Tipo de Pago:</span> 
-                        <select name ="metodo" id="metodos_pago">
-                            <option name ='2' value="2">Tarjeta de credito</option> 
-                            <option name ='3' value="3">Cuenta Rut</option>
-                            <option name ='4' value="4">Transferencia</option>
-                            <option name ='5' value="5">Sodexo</option>
-                            <option name ='1' value='1'>Efectivo</option>
-                        </select>
+                        <input type="text" name ="metodoPago" placeholder="1 a 5" required="">
                     </div>
 
                     <div class="caja-input">
                         <span>Bancos Disponibles:</span> 
-                        <select id="Bancos" name="Banco">
-                            <option name ='2' value="2">Banco Estado</option>
-                            <option name ='1' value="1">Banco Santander</option>
-                            <option name ='4' value="4">Banco Falabella</option> 
-                            <option name ='3' value="3">Banco BCI</option>
-                            
-                            
-                        </select>
+                        <input type="text" name ="Bancos" placeholder="1 a 4" required="">
                     </div>
 
                     <div class="caja-input">

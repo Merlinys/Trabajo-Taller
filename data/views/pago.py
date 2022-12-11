@@ -26,8 +26,8 @@ def cancelarComanda(request):
             return render(request,"payment.html")
         
         #Variables
-        metodoPago = TipoPago.objects.get(tpag_id = int(request.POST.get('metodo')))
-        bancos = Banco.objects.get(banco_id= int(request.POST.get('Banco')))
+        metodoPago = TipoPago.objects.get(tpag_id = request.POST['metodoPago'])
+        bancos = Banco.objects.get(banco_id= request.POST['Bancos'])
         
         Venta(ven_id = request.POST['id venta'],ven_fecha=datetime.date.today()).save()
         coma = Comanda.objects.get(com_id=request.POST['idComanda'])
@@ -38,7 +38,7 @@ def cancelarComanda(request):
         else:
             Pago(pago_id = request.POST['id venta'],ven = Venta.objects.get(ven_id = request.POST['id venta']),tpag =metodoPago,pago_fecha_hora = datetime.datetime.today(),pago_nro_boucher = request.POST['boucher'],pago_monto = request.POST['Precio']  ).save()
 
-        messages.success("Pago realizado correctamente")
+        messages.success(request,"Pago realizado correctamente")
         return render(request,"payment.html")
         
         
