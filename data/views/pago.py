@@ -19,7 +19,7 @@ def cancelarComanda(request):
         except Comanda.DoesNotExist:
             messages.error(request,"ID Comanda incorrecto")
             return render(request,"payment.html") 
-        
+         
         #Comprueba si ya existe una venta con ese id
         if Venta.objects.filter(ven_id = request.POST['id venta']):
             messages.error(request,"ID venta incorrecto")
