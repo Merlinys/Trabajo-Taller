@@ -1,0 +1,40 @@
+version: '1'
+
+networks:
+  ProjectRestobar:
+    external: true
+
+services:
+  mysql-db:
+    image: mysql:latest
+    container_name: MySQLdb
+    volumes:
+      - /opt/slack_bot/mysql_data:/var/lib/mysql
+      - /tmp/slack_bot/mysqld:/var/run/mysqld
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "3312:3312"
+    networks:
+      - ProjectRestobar
+    
+  backend:  
+    build: .
+    container_name: restobr
+    env_file: .env
+    restart: always
+    volumes:
+      - .:/appDocker
+    depends_on:
+      - mysql-db
+    expose:
+      - 8000
+    ports:
+      - "8000:8000"
+    command: ["python","manage.py","runserver","0.0.0.0:8000"]
+    networks:
+      - ProjectRestobar
+  
+volumes:
+  mysql_data:
+    
