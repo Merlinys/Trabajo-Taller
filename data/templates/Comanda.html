@@ -19,19 +19,17 @@
                 {% endfor %}
                 {% endif %}
             </h3></i>
-    
     </div>
 <form action= "/NuevaComanda" method="POST" id= "NC">{%csrf_token%}
     <div class="caja">
         <center><h3>Datos de la comanda</h3></center>
         <center>
-            <input class="datos" type="text" name="id_com" id="idcom" placeholder="ID de Comanda" required = "">
+            <input class="datos" type="text" name="id_com" id="id_com" placeholder="ID de Comanda" required = "">
             <input class="datos" type="text" name="nombre" id="Name_cli" placeholder="Nombre del Cliente" >
             <input class="datos" type="text" name="Rut_Cli" id="RUN_Cli" placeholder="RUN Cliente (Sin puntos y con guion)" required="">
             <input class="datos" type="text" name="Rut_Gar" id="RUN_Gar" placeholder="RUN Garzon (Sin puntos y con guion)" required="">
             <input class="datos" type="number" name="cantidad" id="cant_clientes" placeholder="NRO de Personas" required="">
             <input class="datos" type="number" name="mesa" id="nro_Mesa" placeholder="NRO de la Mesa" required="">
-            
             
         </center>
     </div>
@@ -42,37 +40,35 @@
                 <tr>
                     <th> </th>
                     <th>Productos</th>
-                    
                     <th>Cantidad</th>
-                    <th> </th>
                     <th>Precio</th>
 
                 </tr>              
                 <tr>
-                    <td>Producto 1:</td> <!--se deben crear mas espacios despues de que se seleccione un producto--> 
-                    <td><input class="datos" type="number" name="idProd1" id="idcom1" required=""  ></td>                    
-                    <td><input class="datos" type="number" name= "Cantidad1" id="modifier_cantidad1" required=""></td>
-                    <td><input class="datos" type="number" name="precio1" id="precio1" required="" ></td>
+                    <td>Producto 1:</td> 
+                    <td><input class="datos" type="number" name="idProd1" id="Prods_s" placeholder="Id del Producto" required="" ></td>                    
+                    <td><input class="datos" type="number" name= "Cantidad1" id="Cantidad" placeholder="Cantidad" required=""></td>
+                    <td><input class="datos" type="number" name="precio1" id="precio" placeholder="Precio" required="" ></td>
                     
 
                 </tr>
                 <tr>
                     <td>Producto 2:</td>
-                    <td><input class="datos" type="number" name="idProd2" id="idcom2" ></td>
-                    <td><input class="datos" type="number" name= "Cantidad2"  id="modifier_cantidad2"></td>
-                    <td><input class="datos" type="number" name="precio2" id="precio2"  ></td>
+                    <td><input class="datos" type="number" name="idProd2" id="Prods_s" placeholder="Id del Producto" required=""></td>
+                    <td><input class="datos" type="number" name= "Cantidad2"  id="Cantidad" placeholder="Cantidad" required=""></td>
+                    <td><input class="datos" type="number" name="precio2" id="precio" placeholder="Precio" required=""></td>
                 </tr>
                 <tr>
                     <td>Producto 3:</td>
-                    <td><input class="datos" type="number" name="idProd3" id="idcom3"  ></td>
-                    <td><input class="datos" type="number" name= "Cantidad3"  id="modifier_cantidad3"></td>
-                    <td><input class="datos" type="number" name="precio3" id="precio3"  ></td>
+                    <td><input class="datos" type="number" name="idProd3" id="Prods_s" placeholder="Id del Producto" required=""></td>
+                    <td><input class="datos" type="number" name= "Cantidad3"  id="Cantidad" placeholder="Cantidad" required=""></td>
+                    <td><input class="datos" type="number" name="precio3" id="precio" placeholder="Precio" required=""></td>
                 </tr>
                 <tr>
                     <td>Producto 4:</td>
-                    <td><input class="datos" type="number" name="idProd4" id="idcom4"  ></td>
-                    <td><input class="datos" type="number" name= "Cantidad4" id="modifier_cantidad4"></td>
-                    <td><input class="datos" type="number" name="precio4" id="precio4"  ></td>
+                    <td><input class="datos" type="number" name="idProd4" id="Prods_s" placeholder="Id del Producto" required=""></td>
+                    <td><input class="datos" type="number" name= "Cantidad4" id="Cantidad" placeholder="Cantidad" required=""></td>
+                    <td><input class="datos" type="number" name="precio4" id="precio" placeholder="Precio"  required=""></td>
                 </tr>
             </table>
             <input class="register" type="submit" value="Registrar">

@@ -35,7 +35,7 @@ h1{
 
 .box{
     width: 1500px;
-    height: 290px;
+    height: 350px;
     background-color: #EEFFFB;
     background: rgba(5, 5, 5, 0.836);
     border-radius: 20px;
@@ -56,7 +56,7 @@ h1{
 }
 
 
-#Producto{
+#Prods_s{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100%;
     margin-right: 10px;
@@ -66,11 +66,12 @@ h1{
     margin-left: 7%;
     height: 45px;
     width: 440px;
-    color: white;
-    background-color: gray;
 }
 
-#modifier_cantidad{
+
+
+
+#Cantidad{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100%;
     margin-right: 10px;
@@ -80,11 +81,9 @@ h1{
     margin-left: 7%;
     height: 45px;
     width: 440px;
-    color: white;
-    background-color: gray;
 }
 
-#modifier_precio{
+#precio{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100%;
     margin-right: 10px;
@@ -94,8 +93,6 @@ h1{
     margin-left: 7%;
     height: 45px;
     width: 440px;
-    color: white;
-    background-color: gray;
 }
 
 .box .register{ /*por alguna razon si cambio de posicion este , se cambian las posiciones de los otros btns igual*/
