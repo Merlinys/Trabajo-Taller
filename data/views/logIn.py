@@ -12,8 +12,8 @@ No existe: Reinicia la pagina
 def logIn(request):
     if request.method == "POST":
         try:
-            usuario = Admin.objects.get(admin_mombre=request.POST["txt"],admin_rut=request.POST["rut"],admin_pass=request.POST["contra"])      
+            usuario = Admin.objects.get(admin_mombre=request.POST["txt"],admin_rut=request.POST["Id"],admin_pass=request.POST["contra"])      
         except ObjectDoesNotExist:
             return render(request, "SesionAdmin.html", {},status=404)    
-    return render(request, "optiadm.html",{} )  
+        return render(request, "optiadm.html",{} )  
 

@@ -26,7 +26,7 @@ urlpatterns = [
     path('SesionAdmin',interPag.seAdmin),
     path('addProducto',Productos.agregarProducto ,name='post-agregar'),
     path('verOfertas',interPag.verOferta),
-    path('optiadm',logIn.logIn),
+    path('login',logIn.logIn),
     path('addOferta',Oferta.agregarOferta),
     path('conexion',Oferta.conexionOferta),
     #Garzon y sus opciones
